@@ -2,9 +2,18 @@ const request = require('supertest');
 
 const server = require('./server.js');
 
+const db = require("../database/dbConfig");
+
             
         
 describe('CRUD Tests', () => {
+    beforeAll(async () => {
+        await db("users").truncate();
+    });
+    
+      it("tests are running with DB_ENV set to 'testing'", () => {
+        expect(process.env.DB_ENV).toBe("testing");
+    });
     describe("auth-router tests", () => {
         describe("POST /api/auth/register", () => {
           it("should return a 201 created status", () => {
