@@ -47,11 +47,11 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
     Bcrypt hashes the password. The complexity of the hash can be increased exponentially.
 
-- [ ] What does bcrypt do to slow down attackers?
+- [x] What does bcrypt do to slow down attackers?
 
     Bcrypt hashes the password. the only way to decode the hash is know the algorithm used to create the hash and how many rounds it took to create it.
 
-- [ ] What are the three parts of the JSON Web Token?
+- [ x What are the three parts of the JSON Web Token?
 
     JWT consist of: Header, Payload, and Signature
 
